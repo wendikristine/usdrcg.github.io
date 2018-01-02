@@ -1,10 +1,10 @@
 # Summary
 
-## New User Training
-
-* [Start Here2](README.md)
-
 ## About this Wiki
+
+* [Welcome to USDRCG Wiki](README.md)
+
+## New User Training
 
 * [Start Here](about-this-wiki/welcome-to-the-usdrcg-wiki.md)
 * [SSH Log In](ssh-log-in.md)
