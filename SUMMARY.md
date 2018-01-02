@@ -8,7 +8,7 @@
 
 ## Software & Apps
 
-* Fortran
+* [Modules](fortran.md)
 * [Gaussian](gaussian.md)
 * Geant4
 
