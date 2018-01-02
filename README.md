@@ -1,4 +1,4 @@
-### Follow these guides to learn how to use the HPC
+# Follow these guides to learn how to use the HPC
 
 Recommended order for beginners:
 
@@ -8,6 +8,5 @@ Recommended order for beginners:
 4. [Interactive Session](https://github.com/USDRCG/usdrcg.github.io/wiki/Interactive-Session)
 5. [Batch Compute Jobs](https://github.com/USDRCG/usdrcg.github.io/wiki/Batch-Compute-Jobs)
 
-  
 
 
