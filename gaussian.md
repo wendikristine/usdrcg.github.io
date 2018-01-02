@@ -1,4 +1,6 @@
-## At-a-Glance
+# Gaussian and GaussView
+
+### At-a-Glance
 
 | Item | Information |
 | :--- | :--- |
@@ -16,7 +18,6 @@ When you log in, type the following:
 
 ```
 module load gaussian-09
-
 ```
 
 The above line may be included in \(for example\) your &gt; .bashrc file if you do not wish to type it each time you log in.
@@ -27,26 +28,25 @@ To run Gaussian directly, for example from a`qlogin`session, type`g09 < input-fi
 
 ### The`rungaussian`command
 
-The simplest way to run a Gaussian job is to use the`rungaussian`command. To run Gaussian on the file myinput.com, type the following from the directory containing 'myinput.com':
+The simplest way to run a Gaussian job is to use the`rungaussian`command. To run Gaussian on the file `myinput.com`, type the following from the directory containing `myinput.com`.
 
 ```
 rungaussian myinput.com
-
 ```
 
 > Notes:
 >
 > * Standard output is written to the file`Gaussian-USERNAME-JOBID.out`, and errors are written to`Gaussian-USERNAME-JOBID.err`.
 >
-> * GAUSS\_SCRDIR is set to '/scratch/yourusername/JOBID'.
+> * GAUSS\_SCRDIR is set to `/scratch/yourusername/JOBID`.
 >
-> * Scratch disk may be requested after the input file name with -s, 'rungaussian myinput.com -s 10G'
+> * Scratch disk may be requested after the input file name with -s, `rungaussian myinput.com -s 10G`
 >
 > * If no scratch disk is specified, 1GB is used.
 >
-> * Your Gaussian input file should contain a %NProcShared line requesting a specific number of processors.
+> * Your Gaussian input file should contain a `%NProcShared` line requesting a specific number of processors.
 >
-> * It should also contain a %Mem line requesting a specific amount of memory \(100MB, 2GB, etc\).
+> * It should also contain a `%Mem` line requesting a specific amount of memory \(100MB, 2GB, etc\).
 >
 > * If the number of processors is not specified 1 processor is used.
 >
@@ -58,9 +58,9 @@ rungaussian myinput.com
 >
 > * A Gaussian input file requesting 4 processors and 2.5 GB of memory would contain the following two lines:
 >
->   %NProcShared=4
+>   `%NProcShared=4`
 >
->   %Mem=2.5GB
+>   `%Mem=2.5GB`
 
 ### Writing your own job submission script
 
@@ -68,7 +68,6 @@ Advanced users may wish to run Gaussian with their own job submission script. Wh
 
 ```
 #$ -pe smp 4
-
 ```
 
 Your script should also request memory from the job scheduler by including`-l mem_free=X`where X is the amount of memory you wish to request for your job \(500M, 2G, etc\). Note that while Gaussian’s %Mem specifies the amount of memory for the entire job, mem\_free specifies the amount of memory per processor \(see below\).
@@ -78,7 +77,6 @@ The number of processors requested in your job script should match the amount sp
 ```
 #$ -pe smp 4
 #$ -l mem_free=1G
-
 ```
 
 And the corresponding lines in the Gaussian input file would be
@@ -86,19 +84,17 @@ And the corresponding lines in the Gaussian input file would be
 ```
 %NProcShared=4
 %Mem=4GB
-
 ```
 
 Similarly, you can request scratch disk with`-l scratch_free`. The following example requests 10GB of scratch disk:
 
 ```
 #$ -l scratch_free=10G
-
 ```
 
 ### Customizing the Scratch Directory, GAUSS\_SCRDIR
 
-By default, the Gaussian scratch directory resides on local disk in the /scratch directory. If your gaussian jobs’ RWF files are filling up the /scratch/ directory, a possible workaround may be to use the %RWF command in your Gaussian input file. The %RWF command allows you to provide a specific location for Gaussian’s read-write, and you can pass it the name of a directory in your home directory \(eg %RWF=/home/jsmith/gaussian/rwf\). User home directories have much larger capacity than local disk, and in our experience writing a single large file such as Gaussian’s RWF file to this location should be at least as fast as writing to local disk.
+By default, the Gaussian scratch directory resides on local disk in the /scratch directory. If your gaussian jobs’ RWF files are filling up the /scratch/ directory, a possible workaround may be to use the %RWF command in your Gaussian input file. The %RWF command allows you to provide a specific location for Gaussian’s read-write, and you can pass it the name of a directory in your home directory \(eg `%RWF=/home/jsmith/gaussian/rwf`\). User home directories have much larger capacity than local disk, and in our experience writing a single large file such as Gaussian’s RWF file to this location should be at least as fast as writing to local disk.
 
 ---
 
@@ -106,20 +102,18 @@ By default, the Gaussian scratch directory resides on local disk in the /scratch
 
 ### Running GaussView
 
-To run GaussView you must connect to the cluster with “X11 Forwarding” enabled in your SSH client. On Mac and Linux this means connecting with “ssh -X” instead of just “ssh”. See[X11 Forwarding](https://github.com/USDRCG/usdrcg.github.io/wiki/X11-Forwarding)for more information.
+To run GaussView you must connect to the cluster with “X11 Forwarding” enabled in your SSH client. On Mac and Linux this means connecting with “ssh -X” instead of just “ssh”. See [X11 Forwarding](https://github.com/USDRCG/usdrcg.github.io/wiki/X11-Forwarding)for more information.
 
 Once logged in, type
 
 ```
 source /share/apps/g09/g09.sh
-
 ```
 
 and then type
 
 ```
 gv
-
 ```
 
 The GaussView window should display on your screen.
@@ -138,7 +132,6 @@ To avoid overwhelming the login machine, GaussView should run Gaussian only via 
 
    ```
     rungaussian @INFILE
-
    ```
 
 The GaussView Preferences screen should now look like this:
@@ -153,12 +146,8 @@ The GaussView Preferences screen should now look like this:
 >
 > ![](https://camo.githubusercontent.com/1a794d567fe61c9959bcb2e8bc941d51983d8bb3/687474703a2f2f7573647263672e6769746875622e696f2f6173736574732f696d672f476175737369616e4a6f627465726d696e617465642e706e67 "GaussView Error")
 >
-> * This is because GaussView doesn’t know that Gaussian has been launched on a compute node instead of the login node 
->   &gt;
->   where GaussView is running.
-> * The GaussView job manager \(under Calculate-
->   &gt;
->   Current Jobs\) will not report on any launched jobs. Your Gaussian job will be managed by the job scheduler in the same manner as your regular Gaussian jobs. You can see your Gaussian job’s job ID and monitor its execution with
+> * This is because GaussView doesn’t know that Gaussian has been launched on a compute node instead of the login node where GaussView is running.
+> * The GaussView job manager \(under Calculate-Current Jobs\) will not report on any launched jobs. Your Gaussian job will be managed by the job scheduler in the same manner as your regular Gaussian jobs. You can see your Gaussian job’s job ID and monitor its execution with
 >   `qstat`
 >   and cancel it with
 >   `qdel`
