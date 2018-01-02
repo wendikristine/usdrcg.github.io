@@ -8,5 +8,3 @@ You'll find information for beginners in **New User Training** that guide you th
 
 Also, we have how-to documentation for popular software and applications. More content is added periodically.
 
-
-
