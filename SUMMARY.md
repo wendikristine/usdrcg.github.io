@@ -3,7 +3,7 @@
 ## New User Training
 
 * [Start Here](README.md)
-* SSH Log In
+* [SSH Log In](ssh-log-in.md)
 * Home Directory and Intro to the Command Line
 
 ## Software & Apps
