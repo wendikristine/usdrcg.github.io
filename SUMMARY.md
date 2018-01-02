@@ -3,6 +3,7 @@
 ## Overview
 
 * [Welcome!](README.md)
+* [Gaussian](gaussian.md)
 
 ## Methods
 
