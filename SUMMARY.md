@@ -8,11 +8,11 @@
 
 ## Software & Apps
 
-* [Modules](fortran.md)
 * [Gaussian](gaussian.md)
-* Geant4
+* [Modules](fortran.md)
+* [PAUP](geant4.md)
 
 ## Lawrence Information
 
-* Lawrence SSH Login for Linux and Mac
+* [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
 
