@@ -1,11 +1,18 @@
 # Summary
 
-## Overview
+## New User Training
 
-* [Welcome!](README.md)
+* [Start Here](README.md)
+* SSH Log In
+* Home Directory and Intro to the Command Line
+
+## Software & Apps
+
+* Fortran
 * [Gaussian](gaussian.md)
+* Geant4
 
-## Methods
+## Lawrence Information
 
-* [Defining Methods](methods.md)
+* Lawrence SSH Login for Linux and Mac
 
