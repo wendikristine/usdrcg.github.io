@@ -13,10 +13,15 @@
 * [Interactive Session](about-this-wiki/interactive-session.md)
 * [Batch Compute Jobs](about-this-wiki/batch-compute-jobs.md)
 
+## Jobs, Queues, and Scheduling \(Legacy\)
+
+* [Logging in to an interactive session - qlogin](jobs-queues-and-scheduling-legacy/logging-in-to-an-interactive-session-qlogin.md)
+
 ## Software & Apps
 
 * [Gaussian](gaussian.md)
 * [Modules](fortran.md)
+* [rclone: Configuration and usage for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
 * [PAUP](geant4.md)
 
 ## Lawrence Information
