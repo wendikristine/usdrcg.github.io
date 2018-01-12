@@ -24,7 +24,7 @@
 * [PAUP](geant4.md)
 * [rclone for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
 * [rclone for MS OneDrive](rclone-for-ms-onedrive.md)
-* rclone for DropBox
+* [rclone for DropBox](rclone-for-dropbox.md)
 
 ## Lawrence Information
 
@@ -33,4 +33,9 @@
 * [About Slurm](lawrence-information/about-slurm.md)
 * [Slurm for High Memory Node](slurm-for-high-memory-node.md)
 * [Slurm for GPU and Visualization Node](slurm-gpu-and-visualization-node.md)
+
+## Other Information
+
+* [Legacy Hardware Overview](other-information/legacy-hardware-overview.md)
+* [X11 Forwarding](other-information/x11-forwarding.md)
 
