@@ -6,7 +6,7 @@ This software syncs your HPC directory with many popular cloud storage services.
 
 ## Set-up and Configuration
 
-First, we need to add rclone to your path. You can also check to make sure you're sourcing the correct file using the `which`_ _command.
+First, we need to add rclone to your path. You can also check to make sure you're sourcing the correct file using the `which` command.
 
 ```
  [Wendi.Sapp@login-0-0 ~]$ source /share/apps/rclone/env.sh
@@ -19,10 +19,9 @@ If you wish to have a separate directory which will contain your Google Drive, m
 ```
 [Wendi.Sapp@login-0-0 ~]$ mkdir rclone_GoogleDrive
 [Wendi.Sapp@login-0-0 ~]$ cd rclone_GoogleDrive/
-
 ```
 
-Next, run the rclone configuration. A prompt will notify you that no remote connections exist. To set up a new connection, type_n_.
+Next, run the rclone configuration. A prompt will notify you that no remote connections exist. To set up a new connection, type _n_.
 
 ```
 [Wendi.Sapp@login-0-0 rclone_GoogleDrive]$ rclone config
@@ -38,7 +37,7 @@ n/r/c/s/q
  n
 ```
 
-It will prompt you to enter a name. Enter the name, in this case,_remote_.
+It will prompt you to enter a name. Enter the name, in this case, _remote_.
 
 ```
 name
@@ -82,19 +81,19 @@ Storage
  7
 ```
 
-The next two prompts will need to be left blank. Simply press_Enter_to move to the next.
+The next two prompts will need to be left blank. Simply press Enter to move to the next.
 
 ```
 Google Application Client Id - leave blank normally.
 client_id
 >
- 
+
 Google Application Client Secret - leave blank normally.
 client_secret
 >
 ```
 
-The next step will ask if you would like to use an autoconfiguration. Since we access the HPC remotely, we must manually connect. Therefore, type_n_.
+The next step will ask if you would like to use an autoconfiguration. Since we access the HPC remotely, we must manually connect. Therefore, type _n_.
 
 ```
 Remote config
@@ -125,7 +124,7 @@ Log in and authorize rclone for access
 
 In the browser window, either select the Google account you wish to use or sign into one.
 
-Google will ask if you'd like to provide account access to rclone. Select_Allow_. Then, it will give you a code to copy and paste into your terminal window.
+Google will ask if you'd like to provide account access to rclone. Select _Allow_. Then, it will give you a code to copy and paste into your terminal window.
 
 ```
 Enter verification code
@@ -133,7 +132,7 @@ Enter verification code
  4/iBdkaFE_TQVDw1TdCKD1g1f4w7LHyrUYOj0nQ
 ```
 
-Your terminal will ask you to verify your actions. If there are no errors, type_y_.
+Your terminal will ask you to verify your actions. If there are no errors, type _y_.
 
 ```
 --------------------
@@ -151,7 +150,7 @@ y/e/d
  y
 ```
 
-Finally, we'll need to exit the set-up. Do so by typing_q_.
+Finally, we'll need to exit the set-up. Do so by typing _q_.
 
 ```
 Current remotes:
@@ -195,7 +194,7 @@ Similarly, you can list the directories in your cloud storage.
 
 If you'd like to sync two folders \(one on HPC and one on Google Drive\), you can use the following command:
 
-rclone sync source:path destination:path
+`rclone sync source:path destination:path`
 
 > If dest:path doesn’t exist, it is created and the source:path contents go there.
 
