@@ -1,6 +1,6 @@
-# Welcome to the USDRCG wiki!
+# Welcome to the USD RCG wiki!
 
-#### This is where we keep all of the documentation for you to use as you learn how to use USD's HPC.
+#### This is where we keep all of the documentation for you to use as you learn how to use USD's HPC systems.
 
 Select topics from the navigation section on the left.
 
