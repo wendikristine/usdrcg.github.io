@@ -22,4 +22,8 @@
 ## Lawrence Information
 
 * [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
+* [Lawrence SSH Login for Windows](lawrence-information/lawrence-ssh-login-for-windows.md)
+* [About Slurm](lawrence-information/about-slurm.md)
+* [Slurm for High Memory Node](slurm-for-high-memory-node.md)
+* [Slurm for GPU and Visualization Node](slurm-gpu-and-visualization-node.md)
 
