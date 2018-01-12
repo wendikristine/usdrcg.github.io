@@ -4,13 +4,14 @@
 
 * [Welcome to USDRCG Wiki](README.md)
 
-## New User Training
+## New User Training \(Legacy\)
 
 * [Start Here](about-this-wiki/welcome-to-the-usdrcg-wiki.md)
 * [SSH Log In](ssh-log-in.md)
 * [Home Directory and Intro to the Command Line](home-directory-and-intro-to-the-command-line.md)
 * [Data Transfer](about-this-wiki/data-transfer.md)
 * [Interactive Session](about-this-wiki/interactive-session.md)
+* [Batch Compute Jobs](about-this-wiki/batch-compute-jobs.md)
 
 ## Software & Apps
 
