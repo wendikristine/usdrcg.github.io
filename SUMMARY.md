@@ -19,11 +19,12 @@
 
 ## Software & Apps
 
-* [Gaussian](gaussian.md)
 * [Modules](fortran.md)
+* [Gaussian](gaussian.md)
+* [PAUP](geant4.md)
 * [rclone for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
 * [rclone for MS OneDrive](rclone-for-ms-onedrive.md)
-* [PAUP](geant4.md)
+* rclone for DropBox
 
 ## Lawrence Information
 
