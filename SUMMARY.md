@@ -21,7 +21,8 @@
 
 * [Gaussian](gaussian.md)
 * [Modules](fortran.md)
-* [rclone: Configuration and usage for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
+* [rclone for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
+* [rclone for MS OneDrive](rclone-for-ms-onedrive.md)
 * [PAUP](geant4.md)
 
 ## Lawrence Information
