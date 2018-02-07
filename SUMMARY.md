@@ -33,6 +33,7 @@
 * [About Slurm](lawrence-information/about-slurm.md)
 * [Slurm for High Memory Node](slurm-for-high-memory-node.md)
 * [Slurm for GPU and Visualization Node](slurm-gpu-and-visualization-node.md)
+* [Batch Jobs](lawrence-information/batch-jobs.md)
 
 ## Other Information
 
