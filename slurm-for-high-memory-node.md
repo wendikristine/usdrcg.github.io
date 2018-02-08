@@ -1,4 +1,4 @@
-# High-Memory Node
+# High-Memory Nodes
 
 The Lawrence high-memory \(himem\) node has two partitions, each with 1.5 TB of RAM. This node is especially useful for jobs requiring a large amount of memory and can be accessed either interactively or with a batch script.
 
@@ -18,19 +18,17 @@ Below is an example batch script which calls the a high-memory node. This templa
 >
 > \# This is a comment.
 >
-> \# Lines beginning with the \# symbol are comments and are not interpreted by 
+> \# Lines beginning with the \# symbol are comments and are not interpreted by
 >
 > \# the Job Scheduler.
 >
 > \# Lines beginning with \#SBATCH are special commands to configure the job.
 >
->
->
 > \#\#\# Job Configuration Starts Here \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 >
 > \# Export all current environment variables to the job \(Don't change this\)
 >
-> \#SBATCH --get-user-env 
+> \#SBATCH --get-user-env
 >
 > \# The default is one task per node
 >
@@ -55,8 +53,6 @@ Below is an example batch script which calls the a high-memory node. This templa
 > \#SBATCH --mail-user=email@example.com
 >
 > \#SBATCH --mail-type=ALL
->
->
 >
 > \#\#\# Commands to run your program start here \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 >
