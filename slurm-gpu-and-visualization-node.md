@@ -1,4 +1,4 @@
-# Slurm for GPU and Visualization Node
+# GPU Nodes
 
 GPU/Viz nodes must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
@@ -28,7 +28,7 @@ Below is an example batch script which calls the GPU nodes, this template can be
 >
 > \# This is a comment.
 >
-> \# Lines beginning with the \# symbol are comments and are not interpreted by 
+> \# Lines beginning with the \# symbol are comments and are not interpreted by
 >
 > \# the Job Scheduler.
 >
@@ -38,7 +38,7 @@ Below is an example batch script which calls the GPU nodes, this template can be
 >
 > \# Export all current environment variables to the job \(Don't change this\)
 >
-> \#SBATCH --get-user-env 
+> \#SBATCH --get-user-env
 >
 > \# The default is one task per node
 >
@@ -54,7 +54,7 @@ Below is an example batch script which calls the GPU nodes, this template can be
 >
 > \#SBATCH --partition=gpu
 >
-> \#SBATCH --gres=gpu:pascal:1 
+> \#SBATCH --gres=gpu:pascal:1
 >
 > \#request 10 minutes of runtime - the job will be killed if it exceeds this
 >
@@ -66,8 +66,6 @@ Below is an example batch script which calls the GPU nodes, this template can be
 >
 > \#SBATCH --mail-type=ALL
 >
->
->
 > \#\#\# Commands to run your program start here \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 >
 > pwd
@@ -76,9 +74,7 @@ Below is an example batch script which calls the GPU nodes, this template can be
 >
 > sleep 5
 >
->
->
 > nvidia-smi
 
-              
+
 
