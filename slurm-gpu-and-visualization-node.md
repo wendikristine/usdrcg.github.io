@@ -10,15 +10,11 @@ NUMBER is the amount of resources requested. For the GPU node, there are two log
 
 An example command would be as follows:
 
-```
-srun --pty --gres=gpu:pascal:2 --partition=gpu /bin/bash
-```
+> srun --pty --gres=gpu:pascal:2 --partition=gpu /bin/bash
 
 To see which GPUs are available use the following command:
 
-```
-nvidia-smi
-```
+> nvidia-smi
 
 Below is an example batch script which calls the GPU nodes, this template can be followed when requesting 1 or 2 GPU nodes on Lawrence:
 
