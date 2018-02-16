@@ -40,6 +40,6 @@
 
 ## Other Information
 
-* [Legacy Hardware Overview](other-information/legacy-hardware-overview.md)
+* TigerVNC
 * [X11 Forwarding](other-information/x11-forwarding.md)
 
