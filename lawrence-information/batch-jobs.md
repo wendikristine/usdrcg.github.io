@@ -24,11 +24,11 @@ Batch jobs can be submitted on the Lawrence cluster using Slurm commands. A vari
 >
 > export OMP\_PROC\_BIND=spread
 >
->
->
 > \#run the application after this line\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 >
 > srun -n 10 -c 48 --cpu\_bind=cores /share/apps/someapp
+
+
 
 
 

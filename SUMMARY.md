@@ -34,6 +34,7 @@
 * [High-Memory Node](slurm-for-high-memory-node.md)
 * [GPU Nodes](slurm-gpu-and-visualization-node.md)
 * [Batch Scripts](lawrence-information/batch-jobs.md)
+* [Scratch Directory](lawrence-information/scratch.md)
 
 ## Other Information
 
