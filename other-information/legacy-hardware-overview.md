@@ -30,7 +30,6 @@ Each node contains:
 2x Quad Core AMD Opteron 2356 processors (8 total cores)
 32GB RAM
 133GB local scratch disk
-
 ```
 
 Compute nodes 24 through 30
@@ -41,7 +40,6 @@ Each node contains:
 2x 12-Core AMD Opteron 6172 processors (24 total cores)
 96GB RAM
 890GB local scratch disk
-
 ```
 
 Compute nodes 31 through 44

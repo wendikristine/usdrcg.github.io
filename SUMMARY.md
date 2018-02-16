@@ -17,6 +17,7 @@
 
 ## Legacy HPC
 
+* [About Legacy](about-this-wiki/about-legacy.md)
 * [Start Here](about-this-wiki/welcome-to-the-usdrcg-wiki.md)
 * [SSH Log In](ssh-log-in.md)
 * [Home Directory and Intro to the Command Line](home-directory-and-intro-to-the-command-line.md)
