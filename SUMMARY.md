@@ -4,7 +4,18 @@
 
 * [Welcome to USDRCG Wiki](README.md)
 
-## New User Training \(Legacy\)
+## Lawrence HPC
+
+* [About Lawrence](lawrence-information/about-lawrence.md)
+* [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
+* [Lawrence SSH Login for Windows](lawrence-information/lawrence-ssh-login-for-windows.md)
+* [About Slurm](lawrence-information/about-slurm.md)
+* [High-Memory Node](slurm-for-high-memory-node.md)
+* [GPU Nodes](slurm-gpu-and-visualization-node.md)
+* [Batch Scripts](lawrence-information/batch-jobs.md)
+* [Scratch Directory](lawrence-information/scratch.md)
+
+## Legacy HPC
 
 * [Start Here](about-this-wiki/welcome-to-the-usdrcg-wiki.md)
 * [SSH Log In](ssh-log-in.md)
@@ -25,17 +36,6 @@
 * [rclone for Google Drive](rclone-configuration-and-usage-for-google-drive.md)
 * [rclone for MS OneDrive](rclone-for-ms-onedrive.md)
 * [rclone for DropBox](rclone-for-dropbox.md)
-
-## Lawrence Information
-
-* [About Lawrence](lawrence-information/about-lawrence.md)
-* [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
-* [Lawrence SSH Login for Windows](lawrence-information/lawrence-ssh-login-for-windows.md)
-* [About Slurm](lawrence-information/about-slurm.md)
-* [High-Memory Node](slurm-for-high-memory-node.md)
-* [GPU Nodes](slurm-gpu-and-visualization-node.md)
-* [Batch Scripts](lawrence-information/batch-jobs.md)
-* [Scratch Directory](lawrence-information/scratch.md)
 
 ## Other Information
 
