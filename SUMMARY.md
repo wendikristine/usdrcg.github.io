@@ -28,6 +28,7 @@
 
 ## Lawrence Information
 
+* [About Lawrence](lawrence-information/about-lawrence.md)
 * [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
 * [Lawrence SSH Login for Windows](lawrence-information/lawrence-ssh-login-for-windows.md)
 * [About Slurm](lawrence-information/about-slurm.md)
