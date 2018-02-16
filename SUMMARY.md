@@ -40,6 +40,6 @@
 
 ## Other Information
 
-* TigerVNC
+* [TigerVNC](other-information/tigervnc.md)
 * [X11 Forwarding](other-information/x11-forwarding.md)
 
