@@ -4,7 +4,7 @@ The Lawrence Supercomputer was acquired through a combination of state and feder
 
 Lawrence runs the CentOS Linux operating system and is made up of over 2,000 CPU cores, including systems with 1.5TB of memory, GPU accelerators, and over 400TB of shared high-speed data storage accessible via a 56Gb FDR Infiniband network. Lawrence has an estimated performance of over 60TFLOPS.
 
-The hardwear specifications for Lawrence vary by node and are as follows:
+The hardware specifications for Lawrence vary by node and are as follows:
 
 **node01-node80**
 
@@ -15,8 +15,6 @@ dual 12-core SkyLake 5000 series CPUs
 96GB RAM
 
 240GB SSD
-
-
 
 **gpu01**
 
@@ -30,8 +28,6 @@ dual 12-core SkyLake 5000 series CPUs
 
 2x Nvidia Tesla P100 16GB GPUs
 
-
-
 **viz01**
 
 1x Viz Node
@@ -44,8 +40,6 @@ dual 12-core SkyLake 5000 series CPUs
 
 Nvidia GTX 1080i 11GB graphics adapter
 
-
-
 **himem01, himem02**
 
 2x Large Memory Node
@@ -55,8 +49,6 @@ dual 14-core SkyLake 5000 series CPUs
 1.5TB RAM
 
 2x 240GB SSD, mirrored
-
-
 
 **login**
 
@@ -68,8 +60,6 @@ dual 12-core SkyLake 5000 series CPUs
 
 2x 240GB SSD, mirrored
 
-
-
 **head**
 
 1x Management node
@@ -79,8 +69,6 @@ dual 12-core SkyLake 5000 series CPUs
 96GB RAM
 
 2x 240GB SSD, mirrored
-
-
 
 **zfs01, zfs02**
 
