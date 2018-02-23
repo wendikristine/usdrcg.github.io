@@ -1,5 +1,5 @@
 {
-    "plugins": [ "theme-api" ],
+    "plugins": [ "theme-api", "insert-logo" ],
     "pluginsConfig": {
         "theme-api": {
             "languages": [
@@ -14,5 +14,9 @@
                 }
             ]
         }
+        "insert-logo": {
+            "url": "http://usdrcg.github.io/assets/img/logo_home.png"
+        }
     }
 }
+
