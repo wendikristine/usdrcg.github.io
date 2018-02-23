@@ -8,8 +8,7 @@
 
 * [About Lawrence](lawrence-information/about-lawrence.md)
 * [Login](lawrence-information/login.md)
-* [Lawrence SSH Login for Linux and Mac](lawrence-information/lawrence-ssh-login-for-linux-and-mac.md)
-* [Lawrence SSH Login for Windows](lawrence-information/lawrence-ssh-login-for-windows.md)
+* [Submitting Jobs](lawrence-information/submitting-jobs.md)
 * [About Slurm](lawrence-information/about-slurm.md)
 * [High-Memory Node](slurm-for-high-memory-node.md)
 * [GPU Nodes](slurm-gpu-and-visualization-node.md)
