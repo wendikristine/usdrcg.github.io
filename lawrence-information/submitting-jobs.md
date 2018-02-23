@@ -4,6 +4,40 @@ The Slurm Workload Manager is the job scheduler used by the Lawrence HPC. For a 
 
 For the commonly used Slurm commands on the Lawrence HPC, we have provided quick-start documentation with examples within the Wiki.
 
+# Interactive Jobs
+
+##### General Compute
+
+##### HiMem
+
+##### GPU
+
+# Batch Jobs
+
+##### General Compute
+
+##### HiMem
+
+##### GPU
+
+## Graphical User Interface Jobs \(VNC\)
+
+##### General Compute
+
+##### HiMem
+
+##### GPU
+
+##### Viz
+
+# Filesystems
+
+##### Home Directories
+
+##### Group Home DIrectories
+
+##### Scratch
+
 # High-Memory Node
 
 The Lawrence high-memory \(himem\) node has two partitions, each with 1.5 TB of RAM. This node is especially useful for jobs requiring a large amount of memory and can be accessed either interactively or with a batch script.
