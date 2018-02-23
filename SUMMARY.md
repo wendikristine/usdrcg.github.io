@@ -9,11 +9,6 @@
 * [About Lawrence](lawrence-information/about-lawrence.md)
 * [Login](lawrence-information/login.md)
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
-* [About Slurm](lawrence-information/about-slurm.md)
-* [High-Memory Node](slurm-for-high-memory-node.md)
-* [GPU Nodes](slurm-gpu-and-visualization-node.md)
-* [Batch Scripts](lawrence-information/batch-jobs.md)
-* [Scratch Directory](lawrence-information/scratch.md)
 
 ## Legacy HPC
 
