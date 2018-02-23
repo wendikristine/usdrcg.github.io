@@ -12,7 +12,7 @@
                     "lang": "go",
                     "name": "Go"
                 }
-            ]
+            }
         }
         "insert-logo": {
             "url": "http://usdrcg.github.io/assets/img/logo_home.png"
