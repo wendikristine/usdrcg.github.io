@@ -1,4 +1,4 @@
-# About Slurm
+# Slurm
 
 The Slurm Workload Manager is the job scheduler used by the Lawrence HPC. For a comprehensive overview of Slurm commands, visit the slurm webpage:[https://slurm.schedmd.com/quickstart.html](https://slurm.schedmd.com/quickstart.html)
 
@@ -177,8 +177,6 @@ export OMP_PROC_BIND=spread
 #run the application after this line##########################
 srun -n 10 -c 48 --cpu_bind=cores /share/apps/someapp
 ```
-
-
 
 
 
