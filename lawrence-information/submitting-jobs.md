@@ -12,7 +12,7 @@ INteractive sessions on compute nodes can be used with the Slurm command "srun".
 
 ```
 [user.name@usd.local@login ~]$ srun --pty bash
-[user.name@usd.local@node37 ~]$ 
+[user.name@usd.local@node37 ~]$
 ```
 
 ##### HiMem
@@ -32,7 +32,7 @@ For interactive GPU sessions, a gpu node is requested as below \(Note: you will 
 
 ```
 [user.name@usd.local@login ~]$ srun --pty -p gpu bash
-[user.name@usd.local@gpu01 ~]$ 
+[user.name@usd.local@gpu01 ~]$
 ```
 
 # Batch Jobs
@@ -190,7 +190,7 @@ Please note that home directories are not backed up!
 
 ##### Group Home DIrectories
 
-Group home directories have no additional storage. Additionally, home directories are shared across nodes and have a path as follows:
+Group home directories have 5TB of storage. Additionally, home directories are shared across nodes and have a path as follows:
 
 ```
 /home/smith-lab
