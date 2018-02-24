@@ -46,8 +46,6 @@ export OMP_PROC_BIND=spread
 srun -n 10 -c 48 --cpu_bind=cores /share/apps/someapp
 ```
 
-
-
 ##### HiMem
 
 To use the high memory node within a batch job, add “--partition=himem” to your script.
@@ -136,7 +134,7 @@ TYPE will be “gpu”.
 
 LABEL is defined as “pascal” for the GPU node.
 
-NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”. 
+NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”.
 
 An example command would be as follows:
 
@@ -152,7 +150,7 @@ nvidia-smi
 
 ##### Vis
 
-Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER. 
+Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
 TYPE will be “vis”.
 
@@ -164,7 +162,28 @@ NUMBER is the amount of resources requested. For the Vis node the only option is
 
 ##### Home Directories
 
+Home directories have 50GB of storage. Additionally, home directories are shared across nodes and have a path as follows:
+
+```
+/home/usd.local/user.name
+
+###Home directories can also be called by their environmental variable:
+
+$HOME
+```
+
+ Please note that home directories are not backed up!
+
 ##### Group Home DIrectories
+
+Group home directories have no additional storage. Additionally, home directories are shared across nodes and have a path as follows:
+
+```
+/home/smith-lab
+    /shared (read/write permissions for all group members)
+```
+
+Please note that group home directories are not backed up!
 
 ##### Scratch
 
@@ -183,8 +202,6 @@ cp resultfile.txt $HOME
 Please note that /scratch is not a shared filesystem and that each node has its own /scratch \(169 GB per node \(SSD\)\). Additionally, the data on scratch only lasts while the job is running! If you need /scratch data from your job, remove it before your job ends.
 
 # 
-
-
 
 
 
