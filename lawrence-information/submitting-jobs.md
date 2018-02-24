@@ -38,6 +38,20 @@ For the commonly used Slurm commands on the Lawrence HPC, we have provided quick
 
 ##### Scratch
 
+Slurm creates /scratch/$SLURM\_JOB\_ID when your job is running. If you want to modify or use this output, you could include something like this in your job script:
+
+```
+SCRATCH="/scratch/$SLURM_JOB_ID"
+cp $HOME/workfile.txt $SCRATCH
+cd $SCRATCH
+
+# run commands, do things
+
+cp resultfile.txt $HOME
+```
+
+Please note that /scratch is not a shared filesystem and that each node has its own /scratch \(169 GB per node \(SSD\)\). Additionally, the data on scratch only lasts while the job is running! If you need /scratch data from your job, remove it before your job ends.
+
 # High-Memory Node
 
 The Lawrence high-memory \(himem\) node has two partitions, each with 1.5 TB of RAM. This node is especially useful for jobs requiring a large amount of memory and can be accessed either interactively or with a batch script.
@@ -164,19 +178,7 @@ export OMP_PROC_BIND=spread
 srun -n 10 -c 48 --cpu_bind=cores /share/apps/someapp
 ```
 
-# Scratch Directory Use
 
-Slurm creates /scratch/$SLURM\_JOB\_ID when your job is running. If you want to modify or use this output, you could include something like this in your job script:
-
-```
-SCRATCH="/scratch/$SLURM_JOB_ID"
-cp $HOME/workfile.txt $SCRATCH
-cd $SCRATCH
-
-# run commands, do things
-
-cp resultfile.txt $HOME
-```
 
 
 
