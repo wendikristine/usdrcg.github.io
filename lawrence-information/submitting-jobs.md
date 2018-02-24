@@ -8,6 +8,13 @@ For the commonly used Slurm commands on the Lawrence HPC, we have provided quick
 
 ##### General Compute
 
+INteractive sessions on compute nodes can be used with the Slurm command "srun". For the use of one node, this command can be used generally as demonstrated below:
+
+```
+[user.name@usd.local@login ~]$ srun --pty bash
+[user.name@usd.local@node37 ~]$ 
+```
+
 ##### HiMem
 
 The Lawrence high-memory \(himem\) node has two partitions, each with 1.5 TB of RAM. This node is especially useful for jobs requiring a large amount of memory and can be accessed either interactively or with a batch script.
@@ -20,6 +27,13 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 ```
 
 ##### GPU
+
+For interactive GPU sessions, a gpu node is requested as below \(Note: you will be assigned one of the two GPU nodes\):
+
+```
+[user.name@usd.local@login ~]$ srun --pty -p gpu bash
+[user.name@usd.local@gpu01 ~]$ 
+```
 
 # Batch Jobs
 
@@ -172,7 +186,7 @@ Home directories have 50GB of storage. Additionally, home directories are shared
 $HOME
 ```
 
- Please note that home directories are not backed up!
+Please note that home directories are not backed up!
 
 ##### Group Home DIrectories
 
