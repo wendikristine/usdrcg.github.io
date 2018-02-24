@@ -10,50 +10,6 @@ For the commonly used Slurm commands on the Lawrence HPC, we have provided quick
 
 ##### HiMem
 
-##### GPU
-
-# Batch Jobs
-
-##### General Compute
-
-##### HiMem
-
-##### GPU
-
-## Graphical User Interface Jobs \(VNC\)
-
-##### General Compute
-
-##### HiMem
-
-##### GPU
-
-##### Viz
-
-# Filesystems
-
-##### Home Directories
-
-##### Group Home DIrectories
-
-##### Scratch
-
-Slurm creates /scratch/$SLURM\_JOB\_ID when your job is running. If you want to modify or use this output, you could include something like this in your job script:
-
-```
-SCRATCH="/scratch/$SLURM_JOB_ID"
-cp $HOME/workfile.txt $SCRATCH
-cd $SCRATCH
-
-# run commands, do things
-
-cp resultfile.txt $HOME
-```
-
-Please note that /scratch is not a shared filesystem and that each node has its own /scratch \(169 GB per node \(SSD\)\). Additionally, the data on scratch only lasts while the job is running! If you need /scratch data from your job, remove it before your job ends.
-
-# High-Memory Node
-
 The Lawrence high-memory \(himem\) node has two partitions, each with 1.5 TB of RAM. This node is especially useful for jobs requiring a large amount of memory and can be accessed either interactively or with a batch script.
 
 For interactive jobs on the Lawrence himem nodes, use the srun command as follows:
@@ -62,6 +18,37 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 [user.name@usd.local@login ~]$ srun --pty -p himem bash
 [user.name@usd.local@himem02 ~]$
 ```
+
+##### GPU
+
+# Batch Jobs
+
+##### General Compute
+
+Batch jobs can be submitted on the Lawrence cluster using Slurm commands. A variety of configurations can be used for formulating a batch script. A basic batch script will look like the one below:
+
+```
+#!/bin/bash
+
+#SBATCH -N 10
+#SBATCH -q regular
+#SBATCH -J example1
+#SBATCH --mail-user=user.name@coyotes.usd.edu
+#SBATCH --mail-type=ALL
+#SBATCH -t 12:00:00
+
+#OpenMP settings:
+export OMP_NUM_THREADS=1
+export OMP_PLACES=threads
+export OMP_PROC_BIND=spread
+
+#run the application after this line##########################
+srun -n 10 -c 48 --cpu_bind=cores /share/apps/someapp
+```
+
+
+
+##### HiMem
 
 To use the high memory node within a batch job, add “--partition=himem” to your script.
 
@@ -98,27 +85,7 @@ echo "Hello, World!"
 sleep 5
 ```
 
-# GPU Nodes
-
-GPU/Viz nodes must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
-
-TYPE will be “gpu”.
-
-LABEL is defined as “gtx” for the viz node and “pascal” for the GPU node.
-
-NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”. For the Viz node the only option is “1” as there is only one.
-
-An example command would be as follows:
-
-```
-srun --pty --gres=gpu:pascal:2 --partition=gpu /bin/bash
-```
-
-To see which GPUs are available use the following command:
-
-```
-nvidia-smi
-```
+##### GPU
 
 Below is an example batch script which calls the GPU nodes, this template can be followed when requesting 1 or 2 GPU nodes on Lawrence:
 
@@ -155,28 +122,69 @@ sleep 5
 nvidia-smi
 ```
 
-# Batch Scripts
+## Graphical User Interface Jobs \(VNC\)
 
-Batch jobs can be submitted on the Lawrence cluster using Slurm commands. A variety of configurations can be used for formulating a batch script. To access the GPU/vis/himem nodes, please see the previous corresponding pages for the batch commands to include. A basic batch script will look like the one below:
+##### General Compute
+
+##### HiMem
+
+##### GPU
+
+GPU nodes must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
+
+TYPE will be “gpu”.
+
+LABEL is defined as “pascal” for the GPU node.
+
+NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”. 
+
+An example command would be as follows:
 
 ```
-#!/bin/bash
-
-#SBATCH -N 10
-#SBATCH -q regular
-#SBATCH -J example1
-#SBATCH --mail-user=user.name@coyotes.usd.edu
-#SBATCH --mail-type=ALL
-#SBATCH -t 12:00:00
-
-#OpenMP settings:
-export OMP_NUM_THREADS=1
-export OMP_PLACES=threads
-export OMP_PROC_BIND=spread
-
-#run the application after this line##########################
-srun -n 10 -c 48 --cpu_bind=cores /share/apps/someapp
+srun --pty --gres=gpu:pascal:2 --partition=gpu /bin/bash
 ```
+
+To see which GPUs are available use the following command:
+
+```
+nvidia-smi
+```
+
+##### Vis
+
+Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER. 
+
+TYPE will be “vis”.
+
+LABEL is defined as “gtx” for the viz node.
+
+NUMBER is the amount of resources requested. For the Vis node the only option is “1” as there is only one.
+
+# Filesystems
+
+##### Home Directories
+
+##### Group Home DIrectories
+
+##### Scratch
+
+Slurm creates /scratch/$SLURM\_JOB\_ID when your job is running. If you want to modify or use this output, you could include something like this in your job script:
+
+```
+SCRATCH="/scratch/$SLURM_JOB_ID"
+cp $HOME/workfile.txt $SCRATCH
+cd $SCRATCH
+
+# run commands, do things
+
+cp resultfile.txt $HOME
+```
+
+Please note that /scratch is not a shared filesystem and that each node has its own /scratch \(169 GB per node \(SSD\)\). Additionally, the data on scratch only lasts while the job is running! If you need /scratch data from your job, remove it before your job ends.
+
+# 
+
+
 
 
 
