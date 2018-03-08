@@ -28,7 +28,7 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 
 ##### GPU
 
-For interactive GPU sessions, a gpu node is requested as below \(Note: you will be assigned one of the two GPU nodes\):
+For interactive GPU sessions, the gpu node is requested as below:
 
 ```
 [user.name@usd.local@login ~]$ srun --pty -p gpu bash
@@ -99,7 +99,7 @@ sleep 5
 
 ##### GPU
 
-Below is an example batch script which calls the GPU nodes, this template can be followed when requesting 1 or 2 GPU nodes on Lawrence:
+Below is an example batch script which calls the GPU node, this template can be followed when requesting a GPU node on Lawrence:
 
 ```
 #!/bin/bash
@@ -142,7 +142,7 @@ nvidia-smi
 
 ##### GPU
 
-GPU nodes must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
+The GPU node must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
 TYPE will be “gpu”.
 
@@ -164,7 +164,7 @@ nvidia-smi
 
 ##### Vis
 
-Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting a GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
+Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
 TYPE will be “vis”.
 
