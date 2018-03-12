@@ -136,6 +136,45 @@ nvidia-smi
 
 ## Graphical User Interface Jobs \(VNC\)
 
+**Command Line Use **
+
+```
+[user.name@usd.local@login ~]$ # The vncpasswd command only needs to be run once
+[user.name@usd.local@login ~]$ vncpasswd
+Password:
+Verify:
+[user.name@usd.local@login ~]$ sbatch /opt/examples/gui-job.sh
+Submitted batch job 2965
+[user.name@usd.local@login ~]$ touch job-2965.out
+[user.name@usd.local@login ~]$ tail -f job-2965.out
+job execution at: Fri Mar 9 12:30:35 CST 2018
+running on node node41
+using default VNC server /usr/bin/vncserver
+got VNC display :2
+local (compute node) VNC port is 5902
+got login node VNC port 50041
+Created reverse ports on login node.]
+
+====================================================
+
+Your VNC server is now running!
+To connect:
+1) Mac/Linux/MobaXterm users: run the following command FROM A NEW LOCAL TERMINAL WINDOW (not this one)
+ssh -L50041:localhost:50041 user.name@usd.local@lawrence.usd.edu
+For other users (PuTTY, etc) create a new SSH session and tunnel port 50041 to localhost:50041
+
+2) Then from your computer use a vnc client like TigerVNC Viewer to connect to localhost:50041
+You can download TigerVNC Viewer from https://bintray.com/tigervnc/stable/tigervnc
+Stopping VNC server
+Killing Xvnc process ID 313303
+job 2965 execution finished at: Fri Mar 9 12:31:23 CST 2018
+Type ctrl-C to return to your terminal session.
+^C
+[user.name@usd.local@login ~]$
+
+### Output file is job-xxx.out
+```
+
 ##### General Compute
 
 ##### HiMem
