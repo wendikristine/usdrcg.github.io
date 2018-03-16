@@ -8,7 +8,7 @@ For the commonly used Slurm commands on the Lawrence HPC, we have provided quick
 
 ##### General Compute
 
-INteractive sessions on compute nodes can be used with the Slurm command "srun". For the use of one node, this command can be used generally as demonstrated below:
+Interactive sessions on compute nodes can be used with the Slurm command "srun". For the use of one node, this command can be used generally as demonstrated below:
 
 ```
 [user.name@usd.local@login ~]$ srun --pty bash
@@ -201,7 +201,7 @@ To see which GPUs are available use the following command:
 nvidia-smi
 ```
 
-##### Vis
+##### Viz
 
 Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
