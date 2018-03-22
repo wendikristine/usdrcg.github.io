@@ -28,8 +28,6 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 
 ##### GPU
 
-##### GPU
-
 The GPU node must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
 TYPE will be “gpu”.
@@ -202,8 +200,6 @@ Type ctrl-C to return to your terminal session.
 ##### HiMem
 
 ##### GPU
-
-
 
 ##### Viz
 
