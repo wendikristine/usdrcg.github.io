@@ -14,7 +14,7 @@ The hardwear specifications for Legacy vary by node and are as follows:
 
 ### Processors
 
-Quad-, 12-core, and 16-core AMD Opteron
+4-core, 12-core, and 16-core AMD Opteron
 
 ### RAM
 
