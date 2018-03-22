@@ -136,7 +136,7 @@ nvidia-smi
 
 ## Graphical User Interface Jobs \(VNC\)
 
-The Lawrence viz node is designed for users who wish to do advanced visualization. The viz node is one node with one GPU. A typical use case for the viz node is a VNC job coupled with a real-time graphical user interface \(GUI\). Please note that a graphical job can be run on any node on the cluster and is not soleyly limited to the viz node \(although the viz node will often have the best performance\).
+The Lawrence viz node is designed for users who wish to do advanced visualization. The viz node is one node with one GPU. A typical use case for the viz node is a virtual network computing \(VNC\) job coupled with a real-time graphical user interface \(GUI\). Please note that a graphical job can be run on any node on the cluster and is not solely limited to the viz node \(although the viz node will often have the best performance\).
 
 **Command Line Use **
 
