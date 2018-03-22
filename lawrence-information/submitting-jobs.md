@@ -199,7 +199,19 @@ Type ctrl-C to return to your terminal session.
 
 ##### HiMem
 
+To request a VNC session on the HiMem node, use the same commands as given under General Compute excepting the following command with sbatch:
+
+```
+[user.name@usd.local@login ~]$ sbatch -p himem /opt/examples/gui-job.sh
+```
+
 ##### GPU
+
+To request a VNC session on the HiMem node, use the same commands as given under General Compute excepting the following command with sbatch:
+
+```
+[user.name@usd.local@login ~]$ sbatch --gres=gpu:pascal:1 -p gpu /opt/examples/gui-job.sh
+```
 
 ##### Viz
 
