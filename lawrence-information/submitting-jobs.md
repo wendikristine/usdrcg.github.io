@@ -136,8 +136,6 @@ nvidia-smi
 
 ## Graphical User Interface Jobs \(VNC\)
 
-The Lawrence viz node is designed for users who wish to do advanced visualization. The viz node is one node with one GPU. A typical use case for the viz node is a virtual network computing \(VNC\) job coupled with a real-time graphical user interface \(GUI\). Please note that a graphical job can be run on any node on the cluster and is not solely limited to the viz node \(although the viz node will often have the best performance\).
-
 **Command Line Use **
 
 ```
@@ -205,7 +203,9 @@ nvidia-smi
 
 ##### Viz
 
-Vis nodes must be specifically requested using the “--gres” parameter. Vis access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
+The Lawrence viz node is designed for users who wish to do advanced visualization. The viz node gives users access to accelerated 3D graphics \(one node with one GPU having a GTX logic unit\). A typical use case for the viz node is a virtual network computing \(VNC\) job coupled with a real-time graphical user interface \(GUI\). Please note that a graphical job can be run on any node on the cluster and is not solely limited to the viz node \(although the viz node will often have the best performance\).
+
+Viz nodes must be specifically requested using the “--gres” parameter. Viz access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
 TYPE will be “vis”.
 
