@@ -31,7 +31,7 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 For interactive GPU sessions, the gpu node is requested as below:
 
 ```
-[user.name@usd.local@login ~]$ srun --pty -p gpu bash
+[user.name@usd.local@login ~]$ srun --pty -p gpu --gres=gpu:pascal:1 bash
 [user.name@usd.local@gpu01 ~]$
 ```
 
@@ -136,6 +136,8 @@ nvidia-smi
 
 ## Graphical User Interface Jobs \(VNC\)
 
+The Lawrence viz node is designed for users who wish to do advanced visualization. The viz node is one node with one GPU. A typical use case for the viz node is a VNC job coupled with a real-time graphical user interface \(GUI\). Please note that a graphical job can be run on any node on the cluster and is not soleyly limited to the viz node \(although the viz node will often have the best performance\).
+
 **Command Line Use **
 
 ```
@@ -192,7 +194,7 @@ NUMBER is the amount of resources requested. For the GPU node, there are two log
 An example command would be as follows:
 
 ```
-srun --pty --gres=gpu:pascal:2 --partition=gpu /bin/bash
+srun --pty -p gpu --gres=gpu:pascal:1 bash
 ```
 
 To see which GPUs are available use the following command:

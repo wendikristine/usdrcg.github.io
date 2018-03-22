@@ -8,9 +8,10 @@
 
 * [About Lawrence](lawrence-information/about-lawrence.md)
 * [Login](lawrence-information/login.md)
+* Transferring Files
 * Modules
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
-* Transferring Files
+* Legacy-Lawrence Migration Instructions
 
 ## Legacy HPC
 
