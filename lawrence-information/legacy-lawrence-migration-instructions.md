@@ -1,4 +1,4 @@
-##### Legacy-Lawrence Migration Information
+# Legacy-Lawrence Migration Instructions
 
 This article was created for users transitioning from Legacy to Lawrence during the migration process. The new Lawrence cluster uses Slurm for job management \(on Legacy job management is completed with Sun Grid Engine\). Below, you will find a table comparing command usage between Grid Engine and Slurm:
 
@@ -14,6 +14,8 @@ This article was created for users transitioning from Legacy to Lawrence during 
 | List queue | qconf -sql | squeue |
 | Cluster status | qhost -q | sinfo |
 | GUI | qmon | sview |
+
+
 
 
 

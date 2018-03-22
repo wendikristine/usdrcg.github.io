@@ -8,6 +8,7 @@
 
 * [About Lawrence](lawrence-information/about-lawrence.md)
 * [Login](lawrence-information/login.md)
+* [Filesystems](lawrence-information/filesystems.md)
 * Transferring Files
 * Modules
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
