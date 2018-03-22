@@ -28,6 +28,28 @@ For interactive jobs on the Lawrence himem nodes, use the srun command as follow
 
 ##### GPU
 
+##### GPU
+
+The GPU node must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
+
+TYPE will be “gpu”.
+
+LABEL is defined as “pascal” for the GPU node.
+
+NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”.
+
+An example command would be as follows:
+
+```
+srun --pty -p gpu --gres=gpu:pascal:1 bash
+```
+
+To see which GPUs are available use the following command:
+
+```
+nvidia-smi
+```
+
 For interactive GPU sessions, the gpu node is requested as below:
 
 ```
@@ -136,7 +158,9 @@ nvidia-smi
 
 ## Graphical User Interface Jobs \(VNC\)
 
-**Command Line Use **
+##### **General Compute**
+
+The example below demonstrates how to start a VNC session on a general purpose compute node:
 
 ```
 [user.name@usd.local@login ~]$ # The vncpasswd command only needs to be run once
@@ -175,31 +199,11 @@ Type ctrl-C to return to your terminal session.
 ### Output file is job-xxx.out
 ```
 
-##### General Compute
-
 ##### HiMem
 
 ##### GPU
 
-The GPU node must be specifically requested using the “--gres” parameter. GPU access is controlled by cgroups, which means the resource must be requested if it is to be used. This prevents use conflicts. The format for requesting the GPU node \(as specified in the contig file\) is TYPE:LABEL:NUMBER.
 
-TYPE will be “gpu”.
-
-LABEL is defined as “pascal” for the GPU node.
-
-NUMBER is the amount of resources requested. For the GPU node, there are two logic units, so a user can request “1” or “2”.
-
-An example command would be as follows:
-
-```
-srun --pty -p gpu --gres=gpu:pascal:1 bash
-```
-
-To see which GPUs are available use the following command:
-
-```
-nvidia-smi
-```
 
 ##### Viz
 
