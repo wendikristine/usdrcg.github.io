@@ -11,7 +11,7 @@
 * Transferring Files
 * Modules
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
-* Legacy-Lawrence Migration Instructions
+* [Legacy-Lawrence Migration Instructions](lawrence-information/legacy-lawrence-migration-instructions.md)
 
 ## Legacy HPC
 
