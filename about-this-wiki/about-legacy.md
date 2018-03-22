@@ -14,11 +14,11 @@ The hardwear specifications for Legacy vary by node and are as follows:
 
 ### Processors
 
-Dual-, Quad-, 12-core, and 16-core AMD Opteron
+Quad-, 12-core, and 16-core AMD Opteron
 
 ### RAM
 
-4GB - 128GB per node
+32GB - 128GB per node
 
 ### Storage
 
@@ -59,6 +59,4 @@ Each node contains:
 128GB RAM
 
 890GB local scratch disk
-
-
 
