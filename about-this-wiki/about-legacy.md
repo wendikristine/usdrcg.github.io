@@ -22,7 +22,7 @@ The hardwear specifications for Legacy vary by node and are as follows:
 
 ### Storage
 
-67GB -890GB local scratch disk per node 70TB centrally-shared network storage
+133GB -890GB local scratch disk per node 70TB centrally-shared network storage
 
 ### Network
 
