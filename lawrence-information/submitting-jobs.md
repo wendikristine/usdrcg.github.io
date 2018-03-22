@@ -225,6 +225,12 @@ LABEL is defined as “gtx” for the viz node.
 
 NUMBER is the amount of resources requested. For the Vis node the only option is “1” as there is only one.
 
+To request a VNC session on the HiMem node, use the same commands as given under General Compute excepting the following command with sbatch:
+
+```
+[user.name@usd.local@login ~]$ sbatch --gres=gpu:gtx -p viz /opt/examples/gui-job.sh
+```
+
 # 
 
 # 
