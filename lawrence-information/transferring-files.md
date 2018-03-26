@@ -39,7 +39,15 @@ From that portion of the MobaXterm window, you can drag and drop files between e
 
 **Cyberduck**
 
-## 
+Cyberduck can also be used for moving files by sftp. You can find the Cyberduck installation [here](https://cyberduck.io/). Once installed, opening Cyberduck should return a window as follows:
 
+![](/assets/cyberduck_1.png)
 
+You will need to open a connection by clicking on the 'Open Connection' icon. This will return a window to fill in with the host information. Fill this window in as shown below \(note user.name will be your persnaol Lawrence username\). Be sure to choose SFTP and port 22:
+
+## ![](/assets/cyberduck_2)
+
+After succesfully connecting, you can upload files into your Lawrence folders on your home directory by dragging and dropping from your desktop, or by clicking the upload icon at the top of the Cyberduck display.
+
+![](/assets/cyberduck_3.png)
 
