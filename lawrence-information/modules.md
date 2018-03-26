@@ -4,6 +4,10 @@ The Lawrence HPC uses modules for the use of software applciations of the HPC. M
 
 Once you are logged into Lawrence the module commands will be available to you.
 
+
+
+
+
 | _Command_ | _Description_ |
 | :--- | :--- |
 | module avail | show all modules that are available on the system |
@@ -11,6 +15,23 @@ Once you are logged into Lawrence the module commands will be available to you.
 | module unload SOME.APP | unload a previosuly loaded module |
 | moduel list | list the modeuls you have loaded |
 | module help | gives you information regarding the module command |
+
+
+
+The following example uses module commands to load R version 3.4.1 and then open R for command line use on Lawrence:
+
+```
+[joseph.madison@usd.local@login ~]$ module avail
+r/3.4.1
+[joseph.madison@usd.local@login ~]$ module load r/3.4.1 
+[joseph.madison@usd.local@login ~]$ R
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+> 
+```
 
 
 
