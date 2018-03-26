@@ -35,7 +35,11 @@ If you like moving files using the drag-and-drop method, this is also possible u
 
 In MobaXterm, the file explorer/hierarchy is visible just to the left of the command line interface.
 
-From that portion of the MobaXterm window, you can drag and drop files between either computer as you desire. Easy!
+![](/assets/moba_1.png)
+
+From this section of the MobaXterm window, you can drag and drop files between either computer as you desire. 
+
+
 
 **Cyberduck**
 
