@@ -15,10 +15,10 @@ Once you are logged into Lawrence the module commands will be available to you. 
 The following example uses module commands to load R version 3.4.1 and then open R for command line use on Lawrence:
 
 ```
-[joseph.madison@usd.local@login ~]$ module avail
+[user.name@usd.local@login ~]$ module avail
 r/3.4.1
-[joseph.madison@usd.local@login ~]$ module load r/3.4.1 
-[joseph.madison@usd.local@login ~]$ R
+[user.name@usd.local@login ~]$ module load r/3.4.1 
+[user.name@usd.local@login ~]$ R
 
 R version 3.4.1 (2017-06-30) -- "Single Candle"
 Copyright (C) 2017 The R Foundation for Statistical Computing
