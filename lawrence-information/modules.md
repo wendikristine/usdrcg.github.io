@@ -12,8 +12,6 @@ Once you are logged into Lawrence the module commands will be available to you. 
 | moduel list | list the modeuls you have loaded |
 | module help | gives you information regarding the module command |
 
-
-
 The following example uses module commands to load R version 3.4.1 and then open R for command line use on Lawrence:
 
 ```

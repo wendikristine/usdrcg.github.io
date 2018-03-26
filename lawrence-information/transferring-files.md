@@ -2,7 +2,7 @@
 
 Transferring files onto and off of your Lawrence home directory can be done using several methods available to researchers at USD. This section will cover the movement of files between local systems and the Lawrence HPC.
 
-##### SCP
+### SCP
 
 The standard command line method for file movement between hosts is the `scp`command \(secure copy\). This is an ssh based protocol designed for moving files between local and remote hosts. To get files from your local computer, you will need to open a local terminal session on your computer \(Do not connect to the HPC!, in this example, local@xyz is my local PC\).
 
@@ -29,7 +29,7 @@ file.name
 
 ### Drag-and-Drop Option
 
-If you like moving files using the drag-and-drop method, this is also possible using MobaXterm or Cyberduck. This next file moving method uses sftp, or SSH \(or Secure\) File Transfer Protocol. For this we will open up MobaXterm or Cyberduck. 
+If you like moving files using the drag-and-drop method, this is also possible using MobaXterm or Cyberduck. This next file moving method uses sftp, or SSH \(or Secure\) File Transfer Protocol. For this we will open up MobaXterm or Cyberduck.
 
 **MobaXterm**
 
