@@ -233,7 +233,7 @@ To request a VNC session on the HiMem node, use the same commands as given under
 
 ## Partitions
 
-There are two slurm partitions to be aware of when submitting jobs on Lawrence, the default partition \(nodes\) and the preemptible partition.
+There are two slurm partitions to be aware of when submitting jobs on Lawrence, the default partition \(nodes\) and the preemptible partition. For an in-depth overview of slurm preemption, please visit the corresponding slurm [webpage](https://slurm.schedmd.com/preempt.html).
 
 ##### Nodes \(default\) Partition
 
@@ -243,7 +243,7 @@ The default slurm partition is called “nodes” and will run a job for up to 2
 
 To accomodate longer running jobs, users also have the option of using the preemptible partition. This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compte node/s isneeded for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
 
-# 
+
 
 
 
