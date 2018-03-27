@@ -241,5 +241,5 @@ The default slurm partition is called “nodes” and will run a job for up to t
 
 ##### Preemptible Partition
 
-To accomodate longer running jobs, users also have the option of using the preemptible partition. This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compte node/s is needed for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
+To accomodate longer running jobs, users also have the option of using the preemptible partition. This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compute node/s is needed for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
 
