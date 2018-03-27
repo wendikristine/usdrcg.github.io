@@ -231,7 +231,17 @@ To request a VNC session on the HiMem node, use the same commands as given under
 [user.name@usd.local@login ~]$ sbatch --gres=gpu:gtx -p viz /opt/examples/gui-job.sh
 ```
 
-# 
+## Partitions
+
+There are two slurm partitions to be aware of when submitting jobs on Lawrence, the default partition \(nodes\) and the preemptible partition.
+
+##### Nodes \(default\) Partition
+
+The default slurm partition is called “nodes” and will run a job for up to 2 days on a general compute node/s. When running the sbatch or srun command without passing -p or --partition, your job will be scheduled on the “nodes” partition.
+
+##### Preemptible Partition
+
+To accomodate longer running jobs, users also have the option of using the preemptible partition. This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compte node/s isneeded for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
 
 # 
 
