@@ -237,9 +237,9 @@ There are two slurm partitions to be aware of when submitting jobs on Lawrence, 
 
 ##### Nodes \(default\) Partition
 
-The default slurm partition is called “nodes” and will run a job for up to two days on a general compute node/s. When running the sbatch or srun command without passing -p or --partition, your job will be scheduled on the “nodes” partition.
+The default slurm partition is called “nodes” and will run a job for up to two days on a general compute node/s. When running the sbatch or srun command without passing " -p preemptible" or "--partition preemptible", your job will be scheduled on the “nodes” partition.
 
 ##### Preemptible Partition
 
-To accomodate longer running jobs, users also have the option of using the preemptible partition. This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compute node/s is needed for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
+To accomodate longer running jobs, users also have the option of using the preemptible partition \(using the "-p preemptible" or --partition preemptible" flag\). This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compute node/s is needed for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
 
