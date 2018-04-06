@@ -10,7 +10,9 @@
 * [Login](lawrence-information/login.md)
 * [Filesystems](lawrence-information/filesystems.md)
 * [Transferring Files](lawrence-information/transferring-files.md)
-* [Modules](lawrence-information/modules.md)
+* [Software](lawrence-information/modules.md)
+  * [Modules](lawrence-information/modules/software.md)
+  * Bioconda
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
 * [Legacy-Lawrence Migration ](lawrence-information/legacy-lawrence-migration-instructions.md)
 
