@@ -12,7 +12,7 @@
 * [Transferring Files](lawrence-information/transferring-files.md)
 * [Software](lawrence-information/modules.md)
   * [Modules](lawrence-information/modules/software.md)
-  * Bioconda
+  * [Bioconda](lawrence-information/modules/bioconda.md)
 * [Submitting Jobs](lawrence-information/submitting-jobs.md)
 * [Legacy-Lawrence Migration ](lawrence-information/legacy-lawrence-migration-instructions.md)
 
