@@ -4,8 +4,8 @@
 
 | Item | Information |
 | :--- | :--- |
-| Description | Computational chemistry software with  graphical user interface \(GaussView\). |
-| Command: GaussView | `gv file_name_optional`\(requires[X11 forwarding](https://github.com/USDRCG/usdrcg.github.io/wiki/X11-Forwarding)\) |
+| Description | Computational chemistry software with a graphical user interface \(GaussView\). |
+| Command: GaussView | `gv file_name_optional`\(requires [X11 forwarding](https://wendikristine.gitbooks.io/usdrcg-wiki/content/other-information/x11-forwarding.html)\) |
 | Command: Gaussian | `rungaussian file_name` |
 
 ---
@@ -102,7 +102,7 @@ By default, the Gaussian scratch directory resides on local disk in the /scratch
 
 ### Running GaussView
 
-To run GaussView you must connect to the cluster with “X11 Forwarding” enabled in your SSH client. On Mac and Linux this means connecting with “ssh -X” instead of just “ssh”. See [X11 Forwarding](https://github.com/USDRCG/usdrcg.github.io/wiki/X11-Forwarding)for more information.
+To run GaussView you must connect to the cluster with “X11 Forwarding” enabled in your SSH client. On Mac and Linux this means connecting with “ssh -X” instead of just “ssh”. See [X11 Forwarding](https://github.com/USDRCG/usdrcg.github.io/wiki/X11-Forwarding) for more information.
 
 Once logged in, type
 
