@@ -243,9 +243,5 @@ The default slurm partition is called “nodes” and will run a job for up to t
 
 To accomodate longer running jobs, users also have the option of using the preemptible partition \(using the "-p preemptible" or --partition preemptible" flag\). This partition will allow a job to run for up to 90 days on a general compute node/s. However, if the general compute node/s is needed for a new job in the "nodes" partition, the preemptible job will be canceled \(preempted\) to allow the regular job to run.
 
-## Math Libraries
 
-##### Intel Math Kernel Library \(MKL\)
-
-The Intel MKL library is available on Lawrence and is the recommended math library for most applciations. This library is configurable to various compilers and languages. Functions provided by Intel MKL include BLAS, LAPACK, and, FFTW. For more information on Intel MKL, please visit the developer documentation [webpage](https://software.intel.com/en-us/mkl/documentation).
 
