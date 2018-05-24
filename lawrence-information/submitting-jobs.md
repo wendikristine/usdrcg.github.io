@@ -247,9 +247,5 @@ To accomodate longer running jobs, users also have the option of using the preem
 
 ##### Intel Math Kernel Library \(MKL\)
 
-The Intel MKL library is available on Lawrence and is the recommended math library for most applciations. This library is configurable to various compilers and languages. Functions provided by Intel MKL include BLAS, LAPACK, and, FFTW.
-
-
-
-
+The Intel MKL library is available on Lawrence and is the recommended math library for most applciations. This library is configurable to various compilers and languages. Functions provided by Intel MKL include BLAS, LAPACK, and, FFTW. For more information on Intel MKL, please visit the developer's documentation [webpage](https://software.intel.com/en-us/mkl/documentation). 
 
