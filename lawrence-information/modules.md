@@ -29,12 +29,12 @@ Platform: x86_64-pc-linux-gnu (64-bit)
 
 ## Bioconda
 
-Bioconda is a channel software manager of conda which can be used for installing various bioinformatics applcations. Bioconda is recommended for those wishing to install software that is not readily available as a module. More information on using bioconda can be found on the Bioconda documentation page [here](https://bioconda.github.io/). Packages currently available on Bioconda can be found [here](https://bioconda.github.io/recipes.html#recipes). 
+Bioconda is a channel software manager of conda which can be used for installing various bioinformatics applcations. Bioconda is recommended for those wishing to install software that is not readily available as a module. More information on using bioconda can be found on the Bioconda documentation page [here](https://bioconda.github.io/). Packages currently available on Bioconda can be found [here](https://bioconda.github.io/recipes.html#recipes).
 
 To install bioconda in your home directory on Lawrence, run the install-bioconda script as follows:
 
 ```
-[joseph.madison@usd.local@login ~]$ /apps/install-bioconda.sh
+[user.name@usd.local@login ~]$ /apps/install-bioconda.sh
 Downloading installer
 Running installer
 PREFIX=/home/usd.local/joseph.madison/anaconda3
