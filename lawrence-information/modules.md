@@ -27,5 +27,9 @@ Platform: x86_64-pc-linux-gnu (64-bit)
 >
 ```
 
+## Math Libraries
 
+##### Intel Math Kernel Library \(MKL\)
+
+The Intel MKL library is available on Lawrence and is the recommended math library for most applciations. This library is configurable to various compilers and languages. Functions provided by Intel MKL include BLAS, LAPACK, and, FFTW. For more information on Intel MKL, please visit the developer documentation [webpage](https://software.intel.com/en-us/mkl/documentation).
 
