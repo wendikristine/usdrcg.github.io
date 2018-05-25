@@ -51,3 +51,24 @@ Bioconda will now be available through your home directory to install software.
 
 The Intel MKL library is available on Lawrence and is the recommended math library for most applciations. This library is configurable to various compilers and languages. Functions provided by Intel MKL include BLAS, LAPACK, and FFTW. For more information on Intel MKL, please visit the developer documentation [webpage](https://software.intel.com/en-us/mkl/documentation).
 
+Intel also provides a tool to generate appropriate command line options for your particular compiler, integer size, and threading model which can be found [here](https://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
+
+Example command line options for C and GCC compilers can be found below. These comannds would be added after running "module load intel":
+
+Intel C compiler:
+
+```
+-DMKL_ILP64 -I${MKLROOT}/include  -L${MKLROOT}/lib/intel64 -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+```
+
+
+
+GCC C compiler:
+
+```
+
+-DMKL_ILP64 -m64 -I${MKLROOT}/include -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_intel_ilp64 -lmkl_sequential -lmkl_core -lpthread -lm -ldl
+```
+
+
+
