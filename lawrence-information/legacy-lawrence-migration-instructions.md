@@ -19,11 +19,17 @@ The new Lawrence cluster uses Slurm for job management \(on Legacy job managemen
 
 For more detailed information on Slurm commands visit the Slurm [webpage](https://slurm.schedmd.com/).
 
-
-
 ##### Transferring Data to Lawrence from Legacy
 
 The data in a home directory on Legacy may be transferred to Lawrence using the rsync utility. More details can be found on the Rsync [webpage](https://rsync.samba.org/).
+
+For example, to copy the directory called data/ from Legacy to Lawrence use a command like the following - don't forget the colon at the end.
+
+`[choover@login-0-0 ~]$ rsync -az data choover@lawrence.usd.edu:`
+
+`Warning: Permanently added 'lawrence.usd.edu' (RSA) to the list of known hosts.`
+
+`[choover@login-0-0 ~]$ `
 
 
 
